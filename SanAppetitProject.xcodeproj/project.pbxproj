@@ -7,21 +7,61 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E01436F1CA645F9001A7584 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E01436E1CA645F9001A7584 /* Post.swift */; };
+		0E0A94821C9D3B430079F7A0 /* PostsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0A94811C9D3B430079F7A0 /* PostsVC.swift */; };
+		0E0A94841C9D43590079F7A0 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0A94831C9D43590079F7A0 /* PostCell.swift */; };
+		0E0A94861C9D66CA0079F7A0 /* ImageLook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0A94851C9D66CA0079F7A0 /* ImageLook.swift */; };
+		0E4133D21CAFE04E00B886C6 /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E4133D11CAFE04E00B886C6 /* ProfileImageView.swift */; };
 		0EA6173A1C9625F900431A96 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA617391C9625F900431A96 /* AppDelegate.swift */; };
 		0EA6173C1C9625F900431A96 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA6173B1C9625F900431A96 /* ViewController.swift */; };
-		0EA6173F1C9625F900431A96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EA6173D1C9625F900431A96 /* Main.storyboard */; };
 		0EA617411C9625F900431A96 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0EA617401C9625F900431A96 /* Assets.xcassets */; };
 		0EA617441C9625F900431A96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EA617421C9625F900431A96 /* LaunchScreen.storyboard */; };
+		0EA6174C1C96275400431A96 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0EA6174B1C96275400431A96 /* Main.storyboard */; };
+		0EA617531C96298800431A96 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA617521C96298800431A96 /* Constants.swift */; };
+		0EA617551C9629DE00431A96 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA617541C9629DE00431A96 /* MaterialView.swift */; };
+		0EA617571C962A3300431A96 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA617561C962A3300431A96 /* ButtonView.swift */; };
+		0EA617591C962A6500431A96 /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EA617581C962A6500431A96 /* MaterialTextField.swift */; };
+		0EA6175E1C962B6D00431A96 /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0EA6175A1C962B6D00431A96 /* NotoSans-Bold.ttf */; };
+		0EA6175F1C962B6D00431A96 /* NotoSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0EA6175B1C962B6D00431A96 /* NotoSans-BoldItalic.ttf */; };
+		0EA617601C962B6D00431A96 /* NotoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0EA6175C1C962B6D00431A96 /* NotoSans-Italic.ttf */; };
+		0EA617611C962B6D00431A96 /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0EA6175D1C962B6D00431A96 /* NotoSans-Regular.ttf */; };
+		0EA617661C962F5F00431A96 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EA617631C962F5F00431A96 /* Bolts.framework */; };
+		0EA617671C962F5F00431A96 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EA617641C962F5F00431A96 /* FBSDKCoreKit.framework */; };
+		0EA617681C962F5F00431A96 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0EA617651C962F5F00431A96 /* FBSDKLoginKit.framework */; };
+		0EFAF5F31C9CC5B600CE71A1 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFAF5F21C9CC5B600CE71A1 /* DataService.swift */; };
+		0EFAF5F51C9CDFF800CE71A1 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EFAF5F41C9CDFF800CE71A1 /* SignUpVC.swift */; };
+		32DE5B0CE640A95484BF7EDE /* Pods_SanAppetitProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B0C59603C33E022B740D8BF /* Pods_SanAppetitProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E01436E1CA645F9001A7584 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		0E0A94811C9D3B430079F7A0 /* PostsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostsVC.swift; sourceTree = "<group>"; };
+		0E0A94831C9D43590079F7A0 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		0E0A94851C9D66CA0079F7A0 /* ImageLook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLook.swift; sourceTree = "<group>"; };
+		0E4133D11CAFE04E00B886C6 /* ProfileImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
 		0EA617361C9625F900431A96 /* SanAppetitProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SanAppetitProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0EA617391C9625F900431A96 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0EA6173B1C9625F900431A96 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0EA6173E1C9625F900431A96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0EA617401C9625F900431A96 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0EA617431C9625F900431A96 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0EA617451C9625F900431A96 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EA6174B1C96275400431A96 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		0EA617521C96298800431A96 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0EA617541C9629DE00431A96 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+		0EA617561C962A3300431A96 /* ButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
+		0EA617581C962A6500431A96 /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
+		0EA6175A1C962B6D00431A96 /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Bold.ttf"; sourceTree = "<group>"; };
+		0EA6175B1C962B6D00431A96 /* NotoSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		0EA6175C1C962B6D00431A96 /* NotoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Italic.ttf"; sourceTree = "<group>"; };
+		0EA6175D1C962B6D00431A96 /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
+		0EA617631C962F5F00431A96 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		0EA617641C962F5F00431A96 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		0EA617651C962F5F00431A96 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		0EFAF5F21C9CC5B600CE71A1 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		0EFAF5F41C9CDFF800CE71A1 /* SignUpVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		653814259E31A54370E75654 /* Pods-SanAppetitProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SanAppetitProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-SanAppetitProject/Pods-SanAppetitProject.release.xcconfig"; sourceTree = "<group>"; };
+		7B0C59603C33E022B740D8BF /* Pods_SanAppetitProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SanAppetitProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D2CC495C62F77CC1AC78C4B3 /* Pods-SanAppetitProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SanAppetitProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SanAppetitProject/Pods-SanAppetitProject.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +69,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EA617661C962F5F00431A96 /* Bolts.framework in Frameworks */,
+				0EA617671C962F5F00431A96 /* FBSDKCoreKit.framework in Frameworks */,
+				0EA617681C962F5F00431A96 /* FBSDKLoginKit.framework in Frameworks */,
+				32DE5B0CE640A95484BF7EDE /* Pods_SanAppetitProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +84,8 @@
 			children = (
 				0EA617381C9625F900431A96 /* SanAppetitProject */,
 				0EA617371C9625F900431A96 /* Products */,
+				DF5DACB9B4DFC1B4250B2108 /* Pods */,
+				E9C534CF29AD19FA9F085960 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +100,105 @@
 		0EA617381C9625F900431A96 /* SanAppetitProject */ = {
 			isa = PBXGroup;
 			children = (
+				0EFAF5F11C9CC59E00CE71A1 /* Services */,
+				0EA617621C962F3500431A96 /* Frameworks */,
+				0EA617511C96297200431A96 /* Util */,
+				0EA617501C96296B00431A96 /* Resources */,
+				0EA6174F1C96296600431A96 /* Model */,
+				0EA6174E1C96296100431A96 /* View */,
+				0EA6174D1C96295A00431A96 /* Controller */,
 				0EA617391C9625F900431A96 /* AppDelegate.swift */,
 				0EA6173B1C9625F900431A96 /* ViewController.swift */,
-				0EA6173D1C9625F900431A96 /* Main.storyboard */,
+				0EA6174B1C96275400431A96 /* Main.storyboard */,
 				0EA617401C9625F900431A96 /* Assets.xcassets */,
 				0EA617421C9625F900431A96 /* LaunchScreen.storyboard */,
 				0EA617451C9625F900431A96 /* Info.plist */,
 			);
 			path = SanAppetitProject;
+			sourceTree = "<group>";
+		};
+		0EA6174D1C96295A00431A96 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0EFAF5F41C9CDFF800CE71A1 /* SignUpVC.swift */,
+				0E0A94811C9D3B430079F7A0 /* PostsVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		0EA6174E1C96296100431A96 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0EA617541C9629DE00431A96 /* MaterialView.swift */,
+				0EA617561C962A3300431A96 /* ButtonView.swift */,
+				0EA617581C962A6500431A96 /* MaterialTextField.swift */,
+				0E0A94851C9D66CA0079F7A0 /* ImageLook.swift */,
+				0E0A94831C9D43590079F7A0 /* PostCell.swift */,
+				0E4133D11CAFE04E00B886C6 /* ProfileImageView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		0EA6174F1C96296600431A96 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0E01436E1CA645F9001A7584 /* Post.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0EA617501C96296B00431A96 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0EA6175A1C962B6D00431A96 /* NotoSans-Bold.ttf */,
+				0EA6175B1C962B6D00431A96 /* NotoSans-BoldItalic.ttf */,
+				0EA6175C1C962B6D00431A96 /* NotoSans-Italic.ttf */,
+				0EA6175D1C962B6D00431A96 /* NotoSans-Regular.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		0EA617511C96297200431A96 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				0EA617521C96298800431A96 /* Constants.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		0EA617621C962F3500431A96 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0EA617631C962F5F00431A96 /* Bolts.framework */,
+				0EA617641C962F5F00431A96 /* FBSDKCoreKit.framework */,
+				0EA617651C962F5F00431A96 /* FBSDKLoginKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0EFAF5F11C9CC59E00CE71A1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0EFAF5F21C9CC5B600CE71A1 /* DataService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		DF5DACB9B4DFC1B4250B2108 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D2CC495C62F77CC1AC78C4B3 /* Pods-SanAppetitProject.debug.xcconfig */,
+				653814259E31A54370E75654 /* Pods-SanAppetitProject.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E9C534CF29AD19FA9F085960 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7B0C59603C33E022B740D8BF /* Pods_SanAppetitProject.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +208,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0EA617481C9625F900431A96 /* Build configuration list for PBXNativeTarget "SanAppetitProject" */;
 			buildPhases = (
+				EB8ABD6A02C4DA6E9F82CB15 /* Check Pods Manifest.lock */,
 				0EA617321C9625F900431A96 /* Sources */,
 				0EA617331C9625F900431A96 /* Frameworks */,
 				0EA617341C9625F900431A96 /* Resources */,
+				113FAB9AB3BACFDDD40C8913 /* Embed Pods Frameworks */,
+				9F13F487850AA55B118D776C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,35 +262,90 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EA6175E1C962B6D00431A96 /* NotoSans-Bold.ttf in Resources */,
 				0EA617441C9625F900431A96 /* LaunchScreen.storyboard in Resources */,
+				0EA6175F1C962B6D00431A96 /* NotoSans-BoldItalic.ttf in Resources */,
+				0EA617601C962B6D00431A96 /* NotoSans-Italic.ttf in Resources */,
 				0EA617411C9625F900431A96 /* Assets.xcassets in Resources */,
-				0EA6173F1C9625F900431A96 /* Main.storyboard in Resources */,
+				0EA6174C1C96275400431A96 /* Main.storyboard in Resources */,
+				0EA617611C962B6D00431A96 /* NotoSans-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		113FAB9AB3BACFDDD40C8913 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SanAppetitProject/Pods-SanAppetitProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F13F487850AA55B118D776C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SanAppetitProject/Pods-SanAppetitProject-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB8ABD6A02C4DA6E9F82CB15 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0EA617321C9625F900431A96 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EFAF5F51C9CDFF800CE71A1 /* SignUpVC.swift in Sources */,
+				0EA617591C962A6500431A96 /* MaterialTextField.swift in Sources */,
+				0E0A94821C9D3B430079F7A0 /* PostsVC.swift in Sources */,
+				0E01436F1CA645F9001A7584 /* Post.swift in Sources */,
+				0E4133D21CAFE04E00B886C6 /* ProfileImageView.swift in Sources */,
+				0EFAF5F31C9CC5B600CE71A1 /* DataService.swift in Sources */,
 				0EA6173C1C9625F900431A96 /* ViewController.swift in Sources */,
+				0E0A94861C9D66CA0079F7A0 /* ImageLook.swift in Sources */,
+				0EA617531C96298800431A96 /* Constants.swift in Sources */,
+				0EA617571C962A3300431A96 /* ButtonView.swift in Sources */,
 				0EA6173A1C9625F900431A96 /* AppDelegate.swift in Sources */,
+				0EA617551C9629DE00431A96 /* MaterialView.swift in Sources */,
+				0E0A94841C9D43590079F7A0 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0EA6173D1C9625F900431A96 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0EA6173E1C9625F900431A96 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		0EA617421C9625F900431A96 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -247,8 +442,14 @@
 		};
 		0EA617491C9625F900431A96 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D2CC495C62F77CC1AC78C4B3 /* Pods-SanAppetitProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SanAppetitProject",
+				);
 				INFOPLIST_FILE = SanAppetitProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dat.SanAppetitProject;
@@ -258,8 +459,14 @@
 		};
 		0EA6174A1C9625F900431A96 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 653814259E31A54370E75654 /* Pods-SanAppetitProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/SanAppetitProject",
+				);
 				INFOPLIST_FILE = SanAppetitProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = dat.SanAppetitProject;
@@ -286,6 +493,7 @@
 				0EA6174A1C9625F900431A96 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
