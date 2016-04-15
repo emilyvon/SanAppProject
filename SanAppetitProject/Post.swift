@@ -30,7 +30,7 @@ class Post {
         return _postDescription
     }
     
-    var postImageUrl: String? {
+    var postImageUrl: String! {
         
         return _postImageUrl
     }
@@ -45,7 +45,7 @@ class Post {
         return _dislikes
     }
     
-    var firstName: String {
+    var firstName: String? {
         
         return _firstName
     }
@@ -66,7 +66,7 @@ class Post {
     }
     
     //CREATE AN INITIALIZER FOR WHENEVER YOU CREATE A NEW POST
-    init(postDescription: String, postImageUrl: String?, firstName: String) {
+    init(postDescription: String, postImageUrl: String?, firstName: String!) {
         
         self._postDescription = postDescription
         self._postImageUrl = postImageUrl

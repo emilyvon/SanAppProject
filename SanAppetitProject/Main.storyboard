@@ -555,7 +555,7 @@
                                             <outlet property="descriptionText" destination="umB-5H-spl" id="vM3-Yf-hQD"/>
                                             <outlet property="dislikeImage" destination="uc6-Rv-rjP" id="0CG-bZ-git"/>
                                             <outlet property="dislikesLabel" destination="dDi-cx-dJ0" id="1aV-vM-E5q"/>
-                                            <outlet property="firstNameOutlet" destination="w6r-Ji-Y7g" id="YML-0y-cXj"/>
+                                            <outlet property="firstNameOutlet" destination="w6r-Ji-Y7g" id="SOP-l5-URa"/>
                                             <outlet property="likeImage" destination="HDa-hl-AcT" id="gzp-LN-P3x"/>
                                             <outlet property="likesLabel" destination="FDh-ir-0MM" id="Fe4-J4-COP"/>
                                             <outlet property="postImage" destination="zOW-Hz-imd" id="AJN-C8-VFj"/>

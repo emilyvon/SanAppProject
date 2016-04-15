@@ -265,10 +265,18 @@ class PostsVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UII
     
     func postToFirebase(imgUrl: String?) {
         
+        //////////
+        let currentUser = NSUserDefaults.standardUserDefaults().objectForKey(KEY_CURRENT_USER) as! [String: AnyObject]
+        let firstName = currentUser["firstname"] as! String
+        //////////
+        
         var post: Dictionary<String, AnyObject> = [
         "postDescription": postDescriptionField.text!,
         "likes": 0,
         "dislikes": 0,
+        /////////////
+        "firstname": firstName
+        /////////////
         ]
         
         if imgUrl != nil {

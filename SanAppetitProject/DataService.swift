@@ -53,4 +53,14 @@ class DataService {
         //REF USER / uid then save it under the user category for the specific user, sets the value username: username or provider: email of facebook for example
         REF_USERS.childByAppendingPath(uid).setValue(user)
     }
+    
+    ///////////
+    func observeCurrentUser() {
+        REF_USER_CURRENT.observeSingleEventOfType(.Value) { (snapshot: FDataSnapshot!) in
+            let user = snapshot.value as! [String: AnyObject]
+            NSUserDefaults.standardUserDefaults().setObject(user, forKey: KEY_CURRENT_USER)
+        }
+    }
+    //////////////
 }
+

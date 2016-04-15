@@ -70,6 +70,10 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
                     //CREATE THE USER AND SEND THE DATA TO FIREBASE ONCE THAT NEW USER IS CREATED
                     DataService.ds.REF_BASE.authUser(emailSignUp, password: pwdSignUp, withCompletionBlock: { err, authData in
                         
+                        ////////////
+                        NSUserDefaults.standardUserDefaults().setObject(authData.uid, forKey: KEY_UID)
+                        /////////////
+                        
                         // "" from the Firebase data
                         let user = ["provider": authData.provider!, "firstname": firstNameSignUp, "lastname": lastNameSignUp]  //Add image
                         DataService.ds.createFirebaseUser(authData.uid, user: user)

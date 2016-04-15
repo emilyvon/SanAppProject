@@ -131,8 +131,17 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 } else {
                     
                     //Save the Firebase user account
-                    NSUserDefaults.standardUserDefaults().setValue(SEGUE_LOGGED_IN, forKey: KEY_UID)
+                    //////////////
+                    NSUserDefaults.standardUserDefaults().setValue(authData.uid, forKey: KEY_UID)
+                    print("Saved user uid: \(authData.uid)")
                     self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
+                    
+                    //Get the user credentials
+                    DataService.ds.observeCurrentUser()
+                    //////////////
+                    
+//                    NSUserDefaults.standardUserDefaults().setValue(SEGUE_LOGGED_IN, forKey: KEY_UID)
+//                    self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
                 }
             })
             

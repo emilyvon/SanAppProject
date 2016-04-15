@@ -191,18 +191,6 @@ class PostCell: UITableViewCell {
             }
         })
     }
-    
-    func postToFirebase(imgUrl: String?) {
-        
-        let user: Dictionary <String, String> = [
-            
-            "firstname": firstNameOutlet.text!
-        ]
-        
-        let firebasePost = DataService.ds.REF_USER_CURRENT.childByAutoId()
-        firebasePost.setValue(user)
-    }
-
 }
 
 
