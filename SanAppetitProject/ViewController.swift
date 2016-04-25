@@ -82,25 +82,52 @@ class ViewController: UIViewController, UITextFieldDelegate {
                         
                         print("Logged in! \(authData)")
                         
-                        //Create a Firebase user, with values as dictionary <String, String>
-                        let user = ["provider": authData.provider!]  //Grab the name of Facebook for the username?
-                        //no if let since we don't want it to keep going if there is no user
-                        //If Firebase has a problem, then use the if let
-                        DataService.ds.createFirebaseUser(authData.uid, user: user)
+//                        //Create a Firebase user, with values as dictionary <String, String>
+//                        let user = ["provider": authData.provider!]  //Grab the name of Facebook for the username?
+//                        //no if let since we don't want it to keep going if there is no user
+//                        //If Firebase has a problem, then use the if let
+//                        DataService.ds.createFirebaseUser(authData.uid, user: user)
+//                        
+//                        //THIS GRABS THE DATA FROM THE DATASERVICE AND FINDS THE PATH WITH THE UNIQUE ID AND IT SETS THE VALUE OF THE UNIQUE ID
+//                        
+//                        //Save the newly created Firebase account with the uid using its key
+//                        //Store on the device the token of the Firebase user id
+//                        NSUserDefaults.standardUserDefaults().setValue(authData.uid, forKey: KEY_UID)
+//                        
+//                        //When logged in, send to the view controller
+//                        self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
                         
-                        //THIS GRABS THE DATA FROM THE DATASERVICE AND FINDS THE PATH WITH THE UNIQUE ID AND IT SETS THE VALUE OF THE UNIQUE ID
                         
-                        //Save the newly created Firebase account with the uid using its key
-                        //Store on the device the token of the Firebase user id
-                        NSUserDefaults.standardUserDefaults().setValue(authData.uid, forKey: KEY_UID)
                         
-                        //When logged in, send to the view controller
-                        self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
+////////////////////////////////////////////////////////////////////////////////////////
+                        //test code
+                        if FBSDKAccessToken.currentAccessToken() != nil {
+                            
+                            print("The user is already logged in")
+                            
+                            let newUser = ["provider": authData.provider!]
+                            
+                            DataService.ds.createFirebaseUserFacebook(authData.uid, firebaseUser: newUser)
+                            
+                            
+                            
+                            
+                            //
+                            
+                            
+                            
+                            
+                            //Save the created firebase account to use it later
+                            NSUserDefaults.standardUserDefaults().setValue(authData.uid, forKey: KEY_UID)
+                        }
                     }
                 })
             }
         }
     }
+    
+    ////////////////////////////////////////////////////////////////////////////////////////////
+    
     
     @IBAction func emailButtonPressed(sender: UIButton!) {
         
@@ -155,8 +182,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         self.performSegueWithIdentifier(SEGUE_SIGN_UP, sender: nil)
     }
+    
+    
+    
     //
-            
+    
+    
+    
     //FUNCTIONS
     func showErrorAlert(title: String, msg: String) {
         
@@ -173,6 +205,5 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     return true
     }
-
 }
 

@@ -67,19 +67,22 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
                     
                 } else {
                     
-                    //CREATE THE USER AND SEND THE DATA TO FIREBASE ONCE THAT NEW USER IS CREATED
+                    //Create and log in the user with authUser
                     DataService.ds.REF_BASE.authUser(emailSignUp, password: pwdSignUp, withCompletionBlock: { err, authData in
                         
-                        ////////////
-                        NSUserDefaults.standardUserDefaults().setObject(authData.uid, forKey: KEY_UID)
-                        /////////////
-                        
-                        // "" from the Firebase data
+                        // "" is from the Firebase data
                         let user = ["provider": authData.provider!, "firstname": firstNameSignUp, "lastname": lastNameSignUp]  //Add image
+                        
+                        //Use createFirebaseUser from DataService
                         DataService.ds.createFirebaseUser(authData.uid, user: user)
                         })
                     
-                    self.showErrorAlert("Congratulations! Your account has been created", msg: "Go back to the main menu, log in and start your journey with us on (app name)!")
+                    //Save the user for future usage
+                    NSUserDefaults.standardUserDefaults().setValue(result ["uid"], forKey: "uid")
+                    
+//                    self.showErrorAlert("Congratulations! Your account has been created", msg: "Go back to the main menu, log in and start your journey with us on (app name)!")
+                    
+                    self.performSegueWithIdentifier(SEGUE_NEW_USER_LOG_IN, sender: nil)
                 }
             })
             
@@ -109,6 +112,15 @@ class SignUpVC: UIViewController, UITextFieldDelegate {
         let action = UIAlertAction(title: "Ok", style: .Default, handler: nil)
         alert.addAction(action)
         presentViewController(alert, animated: true, completion: nil)
+    }
+    
+    func showCongratulationsAlert(title: String, msg: String) {
+        
+        let alert = UIAlertController(title: title, message: msg, preferredStyle: .Alert)
+        let action = UIAlertAction(title: "Ok", style: .Default, handler: nil)
+        alert.addAction(action)
+        presentViewController(alert, animated: true, completion: nil)
+        self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
     }
 
     func textFieldShouldReturn(textField: UITextField) -> Bool {

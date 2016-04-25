@@ -19,8 +19,9 @@ let KEY_CURRENT_USER = "currentUid"
 //////
 
 //Segues
-let SEGUE_LOGGED_IN = "loggedIn"
+let SEGUE_LOGGED_IN = "currentlyLoggedIn"
 let SEGUE_SIGN_UP = "signUp"
+let SEGUE_NEW_USER_LOG_IN = "logInNewUser"
 
 //Error codes, status codes
 let STATUS_ACCOUNT_NONEXIST = -8
